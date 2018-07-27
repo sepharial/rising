@@ -11,14 +11,14 @@
     border-radius:5px;
     max-width:200px;
     box-shadow:3px 3px 5px rgb(0,0,0,0.3);
-    font-family:verdana, consolas;
+    font-family:roboto, verdana, sans-serif;
     background:#f3f3f3;}
  
 body {
     background:#000;
     font-size:11px;
     line-height:150%;
-    font-family: verdana, sans-serif;
+    font-family:roboto, verdana, sans-serif;
     color:#000;
     background-image: url(http://flightrising.com/images/layout/arcane/bg.jpg);
     background-attachment:absolute;
