@@ -23,7 +23,7 @@
     	$(".lineage-content").hide();
         $(".clicky").click(function(){
             $(this).next(".info-box-content").slideToggle("750");
-            $(".clicky .spinner").toggleClass("rotate");
+            $(this).children(".spinner").toggleClass("rotate");
 		});
 
         $(".menu").click(function(){
@@ -38,7 +38,24 @@
 
 		});
     });
-</script></head>
+</script>
+<style type="text/css">
+#s-m-t-tooltip {
+    position:absolute;
+    margin:15px 10px;
+    padding:5px 7px;
+    z-index:999999999999;
+    font-size:11px;
+    color:black;
+    line-height:120%;
+    border:1px solid #000;
+    border-radius:5px;
+    max-width:200px;
+    box-shadow:3px 3px 5px rgb(0,0,0,0.3);
+    font-family:verdana, sans-serif;
+    background:#f3f3f3;}
+</style>
+</head>
 <body>
 
 <div id="main">
@@ -294,7 +311,7 @@
     </div>
 
     <div class="information-box lineage">
-        <div class="customize-title clicky" style="cursor:pointer;">Ancestry & Offspring
+        <div class="customize-title clicky">Ancestry & Offspring
             <div class="spinner">▼</div>
         </div>
         <div class="info-box-content lineage-content">
@@ -341,7 +358,7 @@
     </div>
 
     <div class="information-box">
-        <div class="customize-title clicky" style="cursor:pointer;">Information<div class="spinner">▲</div></div>
+        <div class="customize-title clicky">Information<div class="spinner">▲</div></div>
         <div class="description info-box-content">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc interdum vel urna ac suscipit. Mauris ultricies finibus orci, vitae ultrices augue ornare nec. Nullam ac egestas lectus, sit amet consequat felis. Donec est quam, rhoncus non sollicitudin vel, interdum ut nisi. Quisque mattis, ipsum accumsan sodales vulputate, risus sapien placerat ligula, ut fringilla erat est et libero. Morbi sed eleifend arcu. Ut metus tortor, rutrum ac lectus vel, pharetra elementum ante. Nulla aliquet eros ut interdum posuere.</p>
             <p>Etiam faucibus elit enim, vel gravida purus interdum ac. Suspendisse diam tortor, luctus vitae massa a, malesuada ultrices erat. Vestibulum pharetra diam purus, in pretium dolor fringilla blandit. Cras pulvinar enim magna, et luctus lacus molestie sit amet. Quisque nulla leo, imperdiet vitae faucibus sit amet, consequat in sem. Morbi tempus maximus leo et congue. Nulla suscipit velit eget nisi eleifend, a aliquam augue interdum. In et ultrices leo. Donec cursus consectetur tellus. Phasellus sem nibh, interdum eu convallis vel, hendrerit in erat. Nunc pharetra ultrices lectus quis pellentesque. Duis vel dignissim odio.</p> 

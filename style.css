@@ -708,15 +708,12 @@ a {
     -o-border-radius:5px;
     border-radius:5px;}
     .information-box .customize-title {
+    cursor:pointer;
     margin-top:0px;}
     .description {
     padding:15px 20px;
     position:relative;
     line-height:160%;}
-.lineage {
-	position:relative;
-	display:block;
-	margin-top:15px;}
     .spinner {
     display:block;
     position:absolute;
@@ -738,8 +735,10 @@ a {
     -moz-transform:rotate(180deg);
     -o-transform:rotate(180deg);
     transform:rotate(180deg);}
-.lineage .little-title {
-    padding-top:0px;}
+.lineage {
+	position:relative;
+	display:block;
+	margin-top:15px;}
     .lineage a {
     display:block;
     font-weight:bold;
