@@ -1,13 +1,16 @@
 <style type="text/css">
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
+    margin:0;
+    padding:0;
+    border:0;
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;}
 
 body {
+    margin:0;
+    padding:0;
+    border:0;
     background:#000;
     font-size:11px;
     line-height:150%;
@@ -148,25 +151,38 @@ a {
     	position:absolute;
     	left:155px;
     	top:10px;
-    	font-size:11px;
+    	font-size:8px;
     	cursor:pointer;
     	color:#edd49a;
     	border:1px solid #edd49a;
     	background:maroon;
-    	padding:4px;
+    	padding:5px 4px 3px 4px;
     	width:8px;
     	height:8px;
+        z-index:99999999;
     	line-height:8px;
     	text-align:center;
-    	font-weight:bold;}
+    	font-weight:bold;
+        border-radius:50%;
+        -webkit-transition: all .3s linear;
+        -moz-transition: all .3s linear;
+        -o-transition: all .3s linear;
+        transition: all .3s linear;}
+        .menu.rotate {
+        color:maroon;
+        background:#edd49a;
+        -webkit-transform:rotate(180deg);
+        -moz-transform:rotate(180deg);
+        -o-transform:rotate(180deg);
+        transform:rotate(180deg);}
     	.menu:hover {
     	color:maroon;
-    	background:white;}
+    	background:#edd49a;}
     	.usercontrols {
     	z-index:100000000;
     	display:none;
     	top:10px;
-    	left:155px;
+    	left:180px;
     	width:125px;
     	padding:0px 12px;
     	position:absolute;
@@ -189,8 +205,11 @@ a {
     	margin-top:3px;}
     	.usercontrols a:last-of-type {
     	margin-bottom:10px;}
+        .usercontrols a:hover {
+        letter-spacing:1px;}
     	.clickypanel {
     	position:fixed;
+        z-index:9999999;
     	top:0px;
     	bottom:0px;
     	left:0px;
@@ -324,7 +343,7 @@ a {
     display:block;
     width:950px;}
 #navbar {
-	padding:0px 25px;
+	padding:10px 25px 0px 25px;
 	width:160px;
     background:rgb(221,215,199);
 	position:absolute;
@@ -346,7 +365,7 @@ a {
     z-index:1;
     cursor:pointer;
     line-height:21px;
-    margin:20px 0px 2px 0px !important;
+    margin:10px 0px 2px 0px !important;
     padding-left:0px !important;
     font-weight:bold;
     color:#fff !important;
@@ -698,6 +717,27 @@ a {
 	position:relative;
 	display:block;
 	margin-top:15px;}
+    .spinner {
+    display:block;
+    position:absolute;
+    right:20px;
+    top:15px;
+    font-size:8px;
+    cursor:pointer;
+    color:#000;
+    line-height:10px;
+    text-align:center;
+    font-weight:bold;
+    border-radius:50%;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;}
+    .spinner.rotate {
+    -webkit-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    -o-transform:rotate(180deg);
+    transform:rotate(180deg);}
 .lineage .little-title {
     padding-top:0px;}
     .lineage a {
