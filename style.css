@@ -437,6 +437,7 @@ a {
 
 .basic-info {
     position:relative;
+    display:block;
     background:transparent;
     padding:15px 25px 0px 25px;} 
 .dragon-name {
@@ -452,28 +453,18 @@ a {
     margin-top:5px;
     line-height:15px;}
 .data-dots {
-	right:25px;
-	top:15px;
-    border:1px solid #aaa;
+	right:366px;
+	top:13px;
     border-radius:5px;
-	position:absolute;
-    font-weight:bold;
-    font-size:12px;
-    background:#e0e0e0;
-    text-align:left;}
+	position:absolute;}
     .data-dot {
     cursor:default;
     display:inline-block;
     position:relative;
     float:left;
-    padding:8px 9px;
+    padding:7px 4px;
     height:18px;
     min-width:18px;
-    line-height:18px;
-    font-size:10px;
-    text-align:center;
-    border-left:1px solid #aaa;
-    margin-left:-1px;
     position:relative;}
     .data-dot.workwithmeman {
     border:none;
@@ -481,13 +472,13 @@ a {
 
 .dragon {
     height:360px;
-	padding:10px 25px 0px 25px;}
+	padding:6px 25px 0px 25px;}
 	.dragon .you {
 	float:left;}
 .data {
     line-height:18px;
     font-size:11px;
-    margin-left:375px;
+    margin-left:365px;
     background:#e0e0e0;
     border:1px solid #aaa;
     text-align:left;
@@ -497,7 +488,7 @@ a {
     -o-border-radius:5px;
     border-radius:5px;}
 .hungry {
-	width:308px;
+	width:318px;
 	margin-top:10px;
     height:40px;
     line-height:40px;
@@ -508,7 +499,7 @@ a {
     z-index:10;
     position:relative;}
     .hungry.not {
-    height:20px;
+    height:40px;
     line-height:20px;
     background:#e0e0e0;}
     .gotmilk {
@@ -523,7 +514,7 @@ a {
     position:relative;
     display:block;
     background:transparent;
-    width:323px;}  
+    width:333px;}  
     table {
     border-collapse: collapse;
     border-spacing: 0;}
@@ -539,21 +530,27 @@ a {
 
 .exalt-link {
 	position:absolute;
+	display:block;
     text-align:right;
-	right:26px;
-	height:89px;
-	width:330px;
-	margin-top:-108px;
+	right:25px;
+	width:335px;
     z-index:10;}
+
+.exalt-link.exalt-top {
+	top:13px;}
+.exalt-link.exalt-bottom {
+	margin-top:-89px;}
     .exalt-link a, .invalid-action {
     display:inline-block;
-    padding:4px 11.3px 4px 13px;
+    position:relative;
+    float:left;
+    padding:7px 12px;
+    height:18px;
     margin-bottom:9px;
-    margin-left:5px;
-    height:30px;
+    margin-left:9px;
     font-weight:bold;
     text-align:center;
-    line-height:30px;
+    line-height:18px;
     color:maroon;
     font-size:12px;
     border:1px solid #aaa;
@@ -563,17 +560,25 @@ a {
     -o-border-radius:5px;
     border-radius:5px;}
     .invalid-action {
+    background:#d0d0d0;
+    color:#333;}
+    .exalt-link a:first-of-type {
+    margin-left:0px;}
+    .exalt-bottom a:nth-of-type(3) {
+    margin-left:0px;}
+    .exalt-top a, .exalt-top .invalid-action {
+    width:calc(33.3% - 32px);}
+    .exalt-bottom a {
+    width:calc(50% - 30.5px);}
+    .invalid-action {
     cursor:default;}
     .exalt-link a:hover {
     background:#aaa;}
-    .gencode {
-    margin:0px !important;
-    width:298px;}
 
 .customize {
     width:700px;
     height:352px;
-    margin:10px 25px 18px 25px;}
+    margin:3px 25px 18px 25px;}
 .custom-box {
     border:1px solid #aaa;
     position:relative;
@@ -760,23 +765,47 @@ a {
 	width:calc(50% - 2px);}
 .parent {
 	z-index:99;
-	padding-top:15px;
 	position:relative;
 	text-align:center;
 	width:50%;}
 	.parent img {
 	width:125px;}
 	.parent.dad {
-	float:left;
-	width:calc(50% - 1px);
-	border-right:1px solid #aaa;}
+	float:left;}
 	.parent.mom {
 	float:right;}
+	.parent.mom:after {
+	content:"";
+	display:block;
+	position:absolute;
+	width:40px;
+	border-bottom:3px double #aaa;
+	top:160px;
+	left:-20px;}
 	.grand {
 	width:50%;
 	float:left;
+	padding-top:15px;
+	padding-bottom:10px;
+	height:85px;
+	display:block;
 	font-size:10px;
 	position:relative;}
+	.grand.grandma:after, .grand.grandma:before {
+	content:"";
+	display:block;
+	position:absolute;}
+	.grand.grandma:after {
+	width:21px;
+	border-bottom:3px double #aaa;
+	top:40px;
+	left:-6px;}
+	.grand.grandma:before {
+	width:1px;
+	height:65px;
+	background:#aaa;
+	top:42px;
+	left:4px;}
 	.grand img {
 	width:60px;}
 	.grand .grandma {
