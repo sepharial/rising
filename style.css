@@ -72,11 +72,12 @@ a {
     padding-top:2px;
     line-height:175%;
     color:#d0d0d0;
-    background:url(https://i.imgur.com/bKE8Jkh.png);
+    background:url(https://s19.postimg.cc/iv6fhv9oj/starwoodbrook.png);
     	/*http://flightrising.com/images/layout/arcane/banner.jpg
 
     	// Mashups by Ecci http://www1.flightrising.com/forums/cc/2287471/1
     	https://s19.postimg.cc/ninaid7mb/The_Training_Ruins.png
+    	https://i.imgur.com/bKE8Jkh.png  forest
     	https://s19.postimg.cc/iv6fhv9oj/starwoodbrook.png*/
     background-attachment:fixed;
     background-position:center top;
@@ -85,12 +86,11 @@ a {
     .site-header {
     position:relative;
     display:block;
-    margin-top:5px;
+    margin-top:22px;
     margin-left:10px;
-    width:235px;
-    }
-    .site-header img {
     width:235px;}
+    .site-header img {
+    width:180px;}
 #site-updates {
     display:block;
     position:absolute;
@@ -120,7 +120,7 @@ a {
     right:0px;
     bottom:0px;
     width:275px;
-    height:114px;}
+    height:109px;}
     .icon {
     position:absolute;
     display:block;
@@ -149,8 +149,8 @@ a {
     	.menu {
     	display:block;
     	position:absolute;
-    	left:155px;
-    	top:10px;
+    	left:-27px;
+    	top:11px;
     	font-size:8px;
     	cursor:pointer;
     	color:#edd49a;
@@ -163,6 +163,9 @@ a {
     	line-height:8px;
     	text-align:center;
     	font-weight:bold;
+        -webkit-border-radius:50%;
+        -moz-border-radius:50%;
+        -o-border-radius:50%;
         border-radius:50%;
         -webkit-transition: all .3s linear;
         -moz-transition: all .3s linear;
@@ -181,32 +184,33 @@ a {
     	.usercontrols {
     	z-index:100000000;
     	display:none;
-    	top:10px;
-    	left:180px;
-    	width:125px;
-    	padding:0px 12px;
+    	bottom:10px;
+    	left:-170px;
+    	width:110px;
+    	padding:0px 10px;
     	position:absolute;
     	background:#e0e0e0;
     	border:1px solid #aaa;
-    	-webkit-border-radius:5px;
-    	-moz-border-radius:5px;
-    	-o-border-radius:5px;
-    	border-radius:5px;}
+    	-webkit-border-radius:10px 10px 0px 0px;
+    	-moz-border-radius:10px 10px 0px 0px;
+    	-o-border-radius:10px 10px 0px 0px;
+    	border-radius:10px 10px 0px 0px;}
     	.usercontrols a {
     	font-size:11px;
     	display:block;
+    	width:110px;
     	border-top:1px solid #aaa;
-    	padding-top:5px;
-    	margin-top:5px;
+    	padding-top:4px;
+    	margin-top:4px;
     	color:#5b0e0e;}
     	.usercontrols a:first-of-type {
     	border-top:none;
     	padding-top:none;
-    	margin-top:3px;}
+    	margin-top:0px;}
     	.usercontrols a:last-of-type {
-    	margin-bottom:10px;}
+    	margin-bottom:5px;}
         .usercontrols a:hover {
-        letter-spacing:1px;}
+        color:#000;}
     	.clickypanel {
     	position:fixed;
         z-index:9999999;
@@ -227,48 +231,49 @@ a {
     -ms-transform:rotate(-90deg);
     -o-transform:rotate(-90deg);
     transform:rotate(-90deg);}
-.stats {
-    position:relative;
-    height:25px;
-    color:black;
-   	left:-90px;
-   	width:274px;
-    font-weight:bold;
-    text-align:center;}
     .energy {
+   	left:-90px;
+    width:274px;
+    display:block;
     font-size:10px;
     position:relative;
     height:20px;
    	z-index:9999;
     overflow:hidden;
+    color:black;
+    font-weight:bold;
+    text-align:center;
     background:linear-gradient(to left, #3dbf26, yellow, yellow, red);}
     	.unit {
     	display:inline-block;
     	float:left;
     	width:calc(20% - 1px);
-    	height:20px;
-        border-right:1px solid transparent;}
+    	height:20px;}
         .unit.red {
         border-right:1px solid white;}
         .unit.green {
-        border-right:none;
         border-left:1px solid white;}
     .bonus {
-    position:relative;
-   	height:5px;
-   	width:274px;
+    position:absolute;
+    height:64px;
+    top:35px;
+    left:-27px;
     z-index:100000;}
     	.day {
-    	display:inline-block;
-    	float:left;
-    	width:33.33%;
-    	height:5px;}
+    	margin-bottom:5px;
+    	display:block;
+    	width:18px;
+    	height:18px;
+        -webkit-border-radius:50%;
+        -moz-border-radius:50%;
+        -o-border-radius:50%;
+        border-radius:50%;}
     	.one {
-    	background:#6bc5ff;}
+    	background:#20A6FF;}
     	.two {
-    	background:#addfff;}
+    	background:#60BFFF;}
     	.three {
-    	background:#d6efff;}
+    	background:#BFE6FF;}
 .things {
     position:relative;
     display:block;
@@ -343,14 +348,14 @@ a {
     display:block;
     width:950px;}
 #navbar {
-	padding:10px 25px 0px 25px;
+	padding:5px 25px 0px 25px;
 	width:160px;
-    background:rgb(221,215,199);
+    background:#e0e0e0;
 	position:absolute;
 	left:0px;
 	height:calc(100% - 40px);}
     .shield {
-    background:rgb(221,215,199);}
+    background:#e0e0e0;}
     #navbar a {
     display:block;
     color:#5b0e0e;
@@ -358,14 +363,12 @@ a {
     position:relative;
     font-weight:bold;
     padding-left:17px;}
-    #navbar a:hover {
-    text-shadow:0px 0px 5px #baa164;}
     .nav-header {
     position:relative;
     z-index:1;
     cursor:pointer;
     line-height:21px;
-    margin:10px 0px 2px 0px !important;
+    margin:15px 0px 4px 0px !important;
     padding-left:0px !important;
     font-weight:bold;
     color:#fff !important;
