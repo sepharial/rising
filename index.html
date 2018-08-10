@@ -22,7 +22,19 @@
             $(".menu").removeClass("rotate");
         });
     });
-</script>
+
+	jQuery.noConflict();
+	(function($){
+		$(document).ready(function(){
+			$("[title]").style_my_tooltips({ 
+            	tip_follows_cursor:true,
+            	tip_delay_time:30,
+            	tip_fade_speed:300,
+            	attribute:"title"
+			});
+		});
+	})(jQuery);
+	</script>
 
 <!-- Flight Rising: Total Rewrite -->
 
@@ -357,19 +369,5 @@
         <a href="#">Terms of Use</a> | <a href="#">Rules and Guidelines</a> | <a href="#">Code of Conduct</a> | <a href="#">Privacy Policy</a> | <a href="#">Employment Opportunities</a> | <a href="#">Credits</a> | <a href="#">Support</a>
     </div>    
 </div>   
-
-    <script>
-	jQuery.noConflict();
-	(function($){
-		$(document).ready(function(){
-			$("[title]").style_my_tooltips({ 
-            tip_follows_cursor:true,
-            tip_delay_time:30,
-            tip_fade_speed:300,
-            attribute:"title"
-			});
-		});
-	})(jQuery);
-	</script>
 
 </body></html>
