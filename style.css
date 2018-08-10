@@ -101,7 +101,7 @@ a {
     width:255px;
     height:26px;
     line-height:26px;
-    border-bottom-left-radius:5px;
+    border-bottom-left-radius:10px;
     font-size:10px;
     padding:5px 10px;
 	background:rgb(221,215,199);
@@ -350,12 +350,12 @@ a {
 #navbar {
 	padding:5px 25px 0px 25px;
 	width:160px;
-    background:#e0e0e0;
+    background:#ccc;
 	position:absolute;
 	left:0px;
 	height:calc(100% - 40px);}
     .shield {
-    background:#e0e0e0;}
+    background:#ccc;}
     #navbar a {
     display:block;
     color:#5b0e0e;
@@ -633,7 +633,7 @@ a {
     margin-right:15px;
     float:left;
 	width:204px;
-	height:352px;
+	height:325px;
     font-size:11px;}
     .coli .little-title {
     padding-top:0px;}
@@ -650,7 +650,7 @@ a {
 .familiar {
     float:right;}
     .familiar img {
-    margin:15px;
+    margin:6px 15px;
     width:200px;}
     .fam-state {
     position:absolute;
@@ -661,13 +661,13 @@ a {
     z-index:10;
     color:#000;}
     .fam-status {
-    height:40px;
+    height:35px;
     border-top:1px solid #aaa;
     width:100%;
     overflow:hidden;}
     .bond-unit {
     width:25%;
-    height:40px;
+    height:35px;
     float:left;
     background:#fff;}
     .bond-unit.love {
@@ -675,7 +675,7 @@ a {
 .c-buttons {
     display:block;
     position:relative;
-    height:40px;
+    height:35px;
     width:100%;
     text-align:center;}
     .customize-button {
@@ -683,8 +683,8 @@ a {
     position:relative;
     float:left;
     width:50%;
-    height:40px;
-    line-height:40px;
+    height:35px;
+    line-height:35px;
     background:#e0e0e0;
     font-size:12px;
     font-weight:bold;
