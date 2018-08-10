@@ -72,7 +72,7 @@ a {
     padding-top:2px;
     line-height:175%;
     color:#d0d0d0;
-    background:url(https://s19.postimg.cc/iv6fhv9oj/starwoodbrook.png);
+    background:url(https://i.imgur.com/bKE8Jkh.png);
     	/*http://flightrising.com/images/layout/arcane/banner.jpg
 
     	// Mashups by Ecci http://www1.flightrising.com/forums/cc/2287471/1
@@ -580,7 +580,7 @@ a {
 
 .customize {
     width:700px;
-    height:352px;
+    height:330px;
     margin:3px 25px 18px 25px;}
 .custom-box {
     border:1px solid #aaa;
@@ -617,12 +617,16 @@ a {
     .little-title {
     display:block;
     position:relative;
-    margin-bottom:10px;
+    margin:0 auto;
+    margin-bottom:5px;
+    max-width:150px;
     padding-top:15px;
     font-size:9px;
     text-transform:uppercase;
-    text-align:left;
+    text-align:center;
     border-bottom:1px solid #aaa;}
+    .dress .little-title {
+    padding-top:0px;}
     .skins-img {
     float:none;
     display:block;
@@ -633,7 +637,7 @@ a {
     margin-right:15px;
     float:left;
 	width:204px;
-	height:325px;
+	height:327px;
     font-size:11px;}
     .coli .little-title {
     padding-top:0px;}
@@ -643,14 +647,14 @@ a {
     text-align:center;}
     .coli-stats {
     margin-bottom:15px;
-    width:195px;}
+    width:190px;}
     .coli-stats td {
     padding:0px 10px 0px 0px;}
 
 .familiar {
     float:right;}
     .familiar img {
-    margin:6px 15px;
+    margin:7.5px 15px;
     width:200px;}
     .fam-state {
     position:absolute;
