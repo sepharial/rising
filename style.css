@@ -191,6 +191,7 @@ a {
     	position:absolute;
     	background:#e0e0e0;
     	border:1px solid #aaa;
+    	border-bottom:none;
     	-webkit-border-radius:10px 10px 0px 0px;
     	-moz-border-radius:10px 10px 0px 0px;
     	-o-border-radius:10px 10px 0px 0px;
