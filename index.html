@@ -1,6 +1,28 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head><title>FR Page Rewrite Project!</title><link rel="shortcut icon" href="https://vignette.wikia.nocookie.net/flightrising/images/1/14/Flightrising_favicon_new_transparent.png/revision/latest?cb=20170831175959">
 	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><script type="text/javascript" src="jquery.style-my-tooltips.js"></script>
+
+<script>
+	$(document).ready(function(){
+        $(".lineage-content").hide();
+        $(".clicky").click(function(){
+            $(this).next(".info-box-content").slideToggle("750");
+            $(this).children(".spinner").toggleClass("rotate");
+        });
+
+        $(".menu").click(function(){
+            $(this).toggleClass("rotate");
+            $(".usercontrols").slideToggle("750");
+            $(".clickypanel").toggle("750");
+
+        });
+        $(".clickypanel").click(function(){
+            $(".usercontrols, .clickypanel").slideUp("750");
+            $(".menu").removeClass("rotate");
+        });
+    });
+</script>
 
 <!-- Flight Rising: Total Rewrite -->
 
@@ -20,6 +42,7 @@
     font-family:verdana, sans-serif;
     background:#f3f3f3;}
 </style>
+
 </head>
 <body>
 
@@ -335,27 +358,6 @@
     </div>    
 </div>   
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script><script type="text/javascript" src="jquery.style-my-tooltips.js"></script>
-<script>
-	$(document).ready(function(){
-        $(".lineage-content").hide();
-        $(".clicky").click(function(){
-            $(this).next(".info-box-content").slideToggle("750");
-            $(this).children(".spinner").toggleClass("rotate");
-        });
-
-        $(".menu").click(function(){
-            $(this).toggleClass("rotate");
-            $(".usercontrols").slideToggle("750");
-            $(".clickypanel").toggle("750");
-
-        });
-        $(".clickypanel").click(function(){
-            $(".usercontrols, .clickypanel").slideUp("750");
-            $(".menu").removeClass("rotate");
-        });
-    });
-	</script>
     <script>
 	jQuery.noConflict();
 	(function($){
