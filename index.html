@@ -4,37 +4,6 @@
 
 <!-- Flight Rising: Total Rewrite -->
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-<script type="text/javascript" src="jquery.style-my-tooltips.js"></script>
-<script>
-    $(document).ready(function(){
-    	$(".lineage-content").hide();
-        $(".clicky").click(function(){
-            $(this).next(".info-box-content").slideToggle("750");
-            $(this).children(".spinner").toggleClass("rotate");
-		});
-
-        $(".menu").click(function(){
-            $(this).toggleClass("rotate");
-            $(".usercontrols").slideToggle("750");
-            $(".clickypanel").toggle("750");
-
-		});
-        $(".clickypanel").click(function(){
-            $(".usercontrols, .clickypanel").slideUp("750");
-            $(".menu").removeClass("rotate");
-
-		});
-    });
-	$(document).ready(function(){
-    	$("[title]").style_my_tooltips({
-    		tip_follows_cursor:true,
-    		tip_delay_time:30,
-    		tip_fade_speed:300,
-    		attribute:"title"});
-    	})(jQuery);
-</script>
-
 <style type="text/css">
 #s-m-t-tooltip {
     position:absolute;
@@ -365,4 +334,40 @@
         <a href="#">Terms of Use</a> | <a href="#">Rules and Guidelines</a> | <a href="#">Code of Conduct</a> | <a href="#">Privacy Policy</a> | <a href="#">Employment Opportunities</a> | <a href="#">Credits</a> | <a href="#">Support</a>
     </div>    
 </div>   
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script><script type="text/javascript" src="jquery.style-my-tooltips.js"></script>
+<script>
+	jQuery.noConflict();
+	(function($){
+		$(document).ready(function(){
+			$("[title]").style_my_tooltips({ 
+            tip_follows_cursor:true,
+            tip_delay_time:30,
+            tip_fade_speed:300,
+            attribute:"title"
+			});
+		});
+	})(jQuery);
+
+	$(document).ready(function(){
+        $(".lineage-content").hide();
+        $(".clicky").click(function(){
+            $(this).next(".info-box-content").slideToggle("750");
+            $(this).children(".spinner").toggleClass("rotate");
+        });
+
+        $(".menu").click(function(){
+            $(this).toggleClass("rotate");
+            $(".usercontrols").slideToggle("750");
+            $(".clickypanel").toggle("750");
+
+        });
+        $(".clickypanel").click(function(){
+            $(".usercontrols, .clickypanel").slideUp("750");
+            $(".menu").removeClass("rotate");
+
+        });
+    });
+	</script>
+
 </body></html>
