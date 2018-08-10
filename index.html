@@ -337,18 +337,6 @@
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script><script type="text/javascript" src="jquery.style-my-tooltips.js"></script>
 <script>
-	jQuery.noConflict();
-	(function($){
-		$(document).ready(function(){
-			$("[title]").style_my_tooltips({ 
-            tip_follows_cursor:true,
-            tip_delay_time:30,
-            tip_fade_speed:300,
-            attribute:"title"
-			});
-		});
-	})(jQuery);
-
 	$(document).ready(function(){
         $(".lineage-content").hide();
         $(".clicky").click(function(){
@@ -365,9 +353,21 @@
         $(".clickypanel").click(function(){
             $(".usercontrols, .clickypanel").slideUp("750");
             $(".menu").removeClass("rotate");
-
         });
     });
+	</script>
+    <script>
+	jQuery.noConflict();
+	(function($){
+		$(document).ready(function(){
+			$("[title]").style_my_tooltips({ 
+            tip_follows_cursor:true,
+            tip_delay_time:30,
+            tip_fade_speed:300,
+            attribute:"title"
+			});
+		});
+	})(jQuery);
 	</script>
 
 </body></html>
