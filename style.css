@@ -154,13 +154,12 @@ a {
     	font-size:8px;
     	cursor:pointer;
     	color:#edd49a;
-    	border:1px solid #edd49a;
     	background:maroon;
     	padding:5px 4px 3px 4px;
-    	width:8px;
-    	height:8px;
+    	width:10px;
+    	height:10px;
         z-index:99999999;
-    	line-height:8px;
+    	line-height:10px;
     	text-align:center;
     	font-weight:bold;
         -webkit-border-radius:50%;
