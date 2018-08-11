@@ -120,7 +120,7 @@ a {
     right:0px;
     bottom:0px;
     width:275px;
-    height:109px;}
+    height:104px;}
     .icon {
     position:absolute;
     display:block;
@@ -150,7 +150,7 @@ a {
     	display:block;
     	position:absolute;
     	left:-27px;
-    	top:11px;
+    	top:7px;
     	font-size:8px;
     	cursor:pointer;
     	color:#edd49a;
@@ -218,27 +218,23 @@ a {
     	bottom:0px;
     	left:0px;
     	right:0px;
-    	display:none;}
+        display:none;}
     .flight {
     display:block;
     position:absolute;
-    right:-61px;
+    left:16px;
     width:60px;
-    top:15px;
-    z-index:220;
-    -webkit-transform:rotate(-90deg);
-    -moz-transform:rotate(-90deg);
-    -ms-transform:rotate(-90deg);
-    -o-transform:rotate(-90deg);
-    transform:rotate(-90deg);}
+    top:104px;
+    z-index:220;}
     .energy {
-   	left:-90px;
+    left:-90px;
     width:274px;
     display:block;
     font-size:10px;
     position:relative;
-    height:20px;
-   	z-index:9999;
+    height:15px;
+    line-height:15px;
+    z-index:9999;
     overflow:hidden;
     color:black;
     font-weight:bold;
@@ -248,7 +244,7 @@ a {
     	display:inline-block;
     	float:left;
     	width:calc(20% - 1px);
-    	height:20px;}
+    	height:15px;}
         .unit.red {
         border-right:1px solid white;}
         .unit.green {
@@ -256,7 +252,7 @@ a {
     .bonus {
     position:absolute;
     height:64px;
-    top:35px;
+    top:31px;
     left:-27px;
     z-index:100000;}
     	.day {
@@ -295,8 +291,8 @@ a {
     
 #status {
     padding:10px 10px 10px 15px;
-    line-height:20px;
-    height:20px;
+    line-height:15px;
+    height:15px;
     z-index:0;
     font-size:10px;
     border-top:1px solid #000;
@@ -306,7 +302,6 @@ a {
     display:block;
     background:#5b0e0e;}
     #status img {
-    height:20px;
     float:left;
     display:inline-block;
     position:relative;}
@@ -314,10 +309,11 @@ a {
     margin-left:5px;
     float:left;}
     .alert {
-    width:18px;
-    height:18px;
-    line-height:18px;
+    width:15px;
+    height:15px;
+    line-height:15px;
     text-align:center;
+    margin:-1px 0px;
     border:1px solid black;
     background:#cc7608;
     -webkit-border-radius:3px;
@@ -326,7 +322,7 @@ a {
     border-radius:3px;}
     .noms {
     display:block;
-    height:20px;
+    height:15px;
     position:absolute;
     margin-left:132px;
     top:10px;}
@@ -336,7 +332,9 @@ a {
     display:inline-block;
     float:right;}
     .connect img {
-    margin-left:25px;}
+    height:20px;
+    margin:-2.5px 0px;
+    margin-left:35px;}
     
 .container {
     position:relative;
@@ -350,12 +348,9 @@ a {
 #navbar {
 	padding:5px 25px 0px 25px;
 	width:160px;
-    background:#ccc;
 	position:absolute;
 	left:0px;
 	height:calc(100% - 40px);}
-    .shield {
-    background:#ccc;}
     #navbar a {
     display:block;
     color:#5b0e0e;
@@ -482,29 +477,27 @@ a {
     line-height:18px;
     font-size:11px;
     margin-left:365px;
-    background:#e0e0e0;
-    border:1px solid #aaa;
+    width:333px;
     text-align:left;
     position:relative;
     -webkit-border-radius:5px;
     -moz-border-radius:5px;
     -o-border-radius:5px;
     border-radius:5px;}
+.hungry.not {
+    height:40px;
+    line-height:20px;
+    background:transparent;}
 .hungry {
 	width:318px;
 	margin-top:10px;
     height:40px;
     line-height:40px;
-    background:#aaa;
     text-align:left;
     padding-left:15px;
     font-weight:bold;
     z-index:10;
     position:relative;}
-    .hungry.not {
-    height:40px;
-    line-height:20px;
-    background:#e0e0e0;}
     .gotmilk {
     position:absolute;
     top:0px;
@@ -547,17 +540,15 @@ a {
     display:inline-block;
     position:relative;
     float:left;
-    padding:7px 12px;
-    height:18px;
+    padding:7px 13px;
+    height:20px;
     margin-bottom:9px;
     margin-left:9px;
     font-weight:bold;
     text-align:center;
-    line-height:18px;
+    line-height:20px;
     color:maroon;
     font-size:12px;
-    border:1px solid #aaa;
-    background:#e0e0e0;
     -webkit-border-radius:5px;
     -moz-border-radius:5px;
     -o-border-radius:5px;
@@ -576,18 +567,16 @@ a {
     .invalid-action {
     cursor:default;}
     .exalt-link a:hover {
-    background:#aaa;}
+    background:#888 !important;}
 
 .customize {
     width:700px;
     height:330px;
     margin:3px 25px 18px 25px;}
 .custom-box {
-    border:1px solid #aaa;
     position:relative;
     width:230px;
     overflow:hidden;
-    background:#e0e0e0;
     -webkit-border-radius:5px;
     -moz-border-radius:5px;
     -o-border-radius:5px;
@@ -597,7 +586,6 @@ a {
     font-weight:bold;
     display:block;
     color:#000;
-    background:#aaa;
     padding:10px 0px;
     font-size:12px;
     line-height:20px;
@@ -623,8 +611,7 @@ a {
     padding-top:15px;
     font-size:9px;
     text-transform:uppercase;
-    text-align:center;
-    border-bottom:1px solid #aaa;}
+    text-align:center;}
     .dress .little-title {
     padding-top:0px;}
     .skins-img {
@@ -666,7 +653,6 @@ a {
     color:#000;}
     .fam-status {
     height:35px;
-    border-top:1px solid #aaa;
     width:100%;
     overflow:hidden;}
     .bond-unit {
@@ -689,22 +675,17 @@ a {
     width:50%;
     height:35px;
     line-height:35px;
-    background:#e0e0e0;
     font-size:12px;
     font-weight:bold;
     color:maroon;
-    border-top:1px solid #aaa;
     cursor:pointer;
     -webkit-transition: all .3s linear;
     -moz-transition: all .3s linear;
     -o-transition: all .3s linear;
     transition: all .3s linear;}
     .customize-button:nth-of-type(2) {
-    border-left:1px solid #aaa;
     width:calc(50% - 1px);
     float:right;}
-    .customize-button:hover {
-    background:#aaa;}
     .familiar .c-buttons {
     padding-top:0px;}
 
@@ -713,8 +694,6 @@ a {
     margin:18px 25px 0px 25px;
     overflow:hidden;
     position:relative;
-    border:1px solid #aaa;
-    background:#e0e0e0;
     -webkit-border-radius:5px;
     -moz-border-radius:5px;
     -o-border-radius:5px;
@@ -767,7 +746,6 @@ a {
 	height:265px;
 	width:calc(50% - 1px);}
 	.genealogy:nth-of-type(2) {
-	border-left:3px double #aaa;
 	float:right;
 	width:calc(50% - 2px);}
 .parent {
@@ -786,7 +764,6 @@ a {
 	display:block;
 	position:absolute;
 	width:40px;
-	border-bottom:3px double #aaa;
 	top:160px;
 	left:-20px;}
 	.grand {
@@ -804,13 +781,11 @@ a {
 	position:absolute;}
 	.grand.grandma:after {
 	width:21px;
-	border-bottom:3px double #aaa;
 	top:40px;
 	left:-6px;}
 	.grand.grandma:before {
 	width:1px;
 	height:65px;
-	background:#aaa;
 	top:42px;
 	left:4px;}
 	.grand img {
@@ -846,5 +821,81 @@ a {
     color:#baa164;}
     .footer a:hover {
     color:#fff;}
-    
+
+
+/*Fancy color stuffs*/
+#navbar, .shield, .customize-title {
+    background:#d0d0d0;}
+.data {
+    background:#d0d0d0;
+    border:1px solid #aaa;}
+.hungry, .customize-button:hover, 
+    .grand.grandma:before, .exalt-link a {
+    background:#aaa;}
+.custom-box, .information-box {
+    border:1px solid #aaa;
+    background:#eee;}
+    .little-title {
+    border-bottom:1px solid #aaa;}
+    .fam-status {
+    border-top:1px solid #aaa;}
+    .customize-button {
+    color:maroon;
+    border-top:1px solid #aaa;}
+    .customize-button:nth-of-type(2) {
+    border-left:1px solid #aaa;}
+    .genealogy:nth-of-type(2) {
+    border-left:3px double #aaa;}
+    .parent.mom:after, .grand.grandma:after {
+    border-bottom:3px double #aaa;}
+
+.demanding {
+    position:fixed;
+    padding:10px;
+    background:white;
+    margin:20px;
+    font-weight:bold;
+    border-radius:10px;
+    cursor:pointer;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;}
+    .demanding.colorize {
+    background:#dad7c8;}
+
+#navbar.colorize, .shield.colorize, .customize-title.colorize {
+    background:#dad7c8 !important;}
+.data.colorize {
+    background:#dad7c8 !important;
+    border:1px solid #bfbaa2 !important;}
+.hungry.milk.colorize, .customize-button.colorize:hover, 
+    .grand.grandma.colorize:before, .exalt-link.colorize a {
+    background:#bfbaa2 !important;}
+.custom-box.colorize, .information-box.colorize {
+    border:1px solid #bfbaa2 !important;
+    background:#eee;}
+    .little-title.colorize {
+    border-bottom:1px solid #bfbaa2 !important;}
+    .fam-status.colorize {
+    border-top:1px solid #bfbaa2 !important;}
+    .customize-button.colorize {
+    color:maroon;
+    border-top:1px solid #bfbaa2 !important;}
+    .customize-button.colorize:nth-of-type(2) {
+    border-left:1px solid #bfbaa2 !important;}
+    .genealogy.colorize:nth-of-type(2) {
+    border-left:3px double #bfbaa2 !important;}
+    .parent.mom.colorize:after, .grand.grandma.colorize:after {
+    border-bottom:3px double #bfbaa2 !important;}
+
+#navbar, .shield, .customize-title, .data, .hungry.milk, .customize-button:hover, 
+    .grand.grandma:before, .exalt-link a, .custom-box, .information-box, .little-title, .customize-button, .customize-button:nth-of-type(2), .genealogy:nth-of-type(2), .parent.mom:after, .grand.grandma:after {
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;}
+    .exalt-link a:hover {
+    background:#888 !important;}
+
 </style>

@@ -24,6 +24,13 @@
     });
 
 
+	$(document).ready(function(){
+        $(".demanding").click(function(){
+            $(".demanding, #navbar, .data, .custom-box, .exalt-link, .customize-title, .information-box, .little-title, .fam-status, .customize-button, .genealogy, .hungry.milk, .parent, .grand").toggleClass("colorize");
+        });
+    });
+
+
 	(function($){
 		$(document).ready(function(){
 			$("[title]").style_my_tooltips({ 
@@ -57,6 +64,8 @@
 
 </head>
 <body>
+
+<div class="demanding">Toggle Colors</div>
 
 <div id="main">
 <div id="hud">
@@ -92,7 +101,7 @@
             <div class="unit"></div>
             <div class="unit green"></div>
         </div>
-            <div class="bonus">
+            <div class="bonus" title="Well-Fed Bonus">
                 <div class="day one"></div>
                 <div class="day two"></div>
                 <div class="day three"></div>
@@ -118,7 +127,7 @@
             <span class="nonalert">0</span>
         <img src="http://flightrising.com/images/layout/friends_icon.png" alt="Friends Requests">
             <span class="nonalert">0</span>
-        <img src="http://flightrising.com/images/layout/small_alert.png" alt="Forum and Auction House Alerts" style="height:22px">
+        <img src="http://flightrising.com/images/layout/small_alert.png" alt="Forum and Auction House Alerts">
             <span class="alert">1</span>
     </div>
 </div>
@@ -158,7 +167,7 @@
 	</div>
 
 <div class="box">
-	<div class="lair-nav"><a href="#">Dragon Lair</a> » <a href="#">Ayana</a> | <a href="#" class="this">Amelia</a> | <a href="#">Glorfindel</a> | <a href="#">Yasmina</a> | <a href="#">Aristophanes</a></div>
+	<div class="lair-nav"><a href="#">Lair</a> » <a href="#">Ayana</a> | <a href="#" class="this">Amelia</a> | <a href="#">Glorfindel</a> | <a href="#">Yasmina</a> | <a href="#">Aristophanes</a> » <a href="#">Next Row</a></div>
     <div class="basic-info">
         <div class="dragon-name">Amelia</div>
     	<div class="number">#17154474</div>
@@ -180,7 +189,7 @@
             <div class="hungry not">
                 <b>Imperial Male</b> <span style="font-weight:normal; float:right; margin-right:14px;">Level 25</span><br>
                 <b>Hatchday</b> <span style="font-weight:normal; float:right; margin-right:14px;">September 26, 2015 (2 years)</span></div>
-            <div class="hungry">
+            <div class="hungry milk">
                 Energy: 48/50
                 <div class="gotmilk"></div>
             </div>
