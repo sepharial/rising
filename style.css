@@ -508,7 +508,7 @@ a {
     z-index:0;
     height:40px;
     width:96%;
-    background:linear-gradient(to left, #3dbf26, yellow, yellow, red);
+    background:linear-gradient(to left, gold, darkred);
     opacity:0.75;}
 .data-stats {
     position:relative;
@@ -575,16 +575,18 @@ a {
 
 .customize {
     width:700px;
-    height:330px;
+    height:329px;
+    overflow:hidden;
+    background:#bfbaa2;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -o-border-radius:5px;
+    border-radius:5px;
     margin:3px 25px 18px 25px;}
 .custom-box {
     position:relative;
     width:230px;
-    overflow:hidden;
-    -webkit-border-radius:5px;
-    -moz-border-radius:5px;
-    -o-border-radius:5px;
-    border-radius:5px;}
+    overflow:hidden;}
 .customize-title {
     position:relative;
     font-weight:bold;
@@ -598,7 +600,6 @@ a {
     margin-bottom:0px;}
 .dress {
     display:inline-block;
-    margin-right:15px;
     float:left;}
     .dress img {
     margin:0px;
@@ -625,9 +626,9 @@ a {
     
 .coli {
     display:inline-block;
-    margin-right:15px;
     float:left;
-	width:204px;
+    margin:0px -1px;
+    width:236px;
 	height:327px;
     font-size:11px;}
     .coli .little-title {
@@ -834,73 +835,73 @@ a {
 
 
 /*Fancy color stuffs*/
-#navbar, .shield, .customize-title {
-    background:#d0d0d0;}
-.data {
-    background:#d0d0d0;
-    border:1px solid #aaa;}
-.customize-button:hover, 
-    .grand.grandma:before, .exalt-link a {
-    background:#aaa;}
-.custom-box, .information-box {
-    border:1px solid #aaa;
-    background:#eee;}
-    .little-title {
-    border-bottom:1px solid #aaa;}
-    .fam-status {
-    border-top:1px solid #aaa;}
-    .customize-button {
-    color:maroon;
-    border-top:1px solid #aaa;}
-    .customize-button:nth-of-type(2) {
-    border-left:1px solid #aaa;}
-    .genealogy:nth-of-type(2) {
-    border-left:3px double #aaa;}
-    .parent.mom:after, .grand.grandma:after {
-    border-bottom:3px double #aaa;}
 
 .demanding {
     position:fixed;
     padding:10px;
-    background:white;
     margin:20px;
     font-weight:bold;
     border-radius:10px;
     cursor:pointer;
-    border:2px solid black;
+    color:maroon;
+    border:2px solid maroon;
+    background:#dad7c8;
     -webkit-transition: all .3s linear;
     -moz-transition: all .3s linear;
     -o-transition: all .3s linear;
     transition: all .3s linear;}
     .demanding.colorize {
-    color:maroon;
-    border:2px solid maroon;
+    background:white;
+    color:black;
+    border:2px solid black;}
+
+#navbar, .shield, .customize-title {
     background:#dad7c8;}
+.data {
+    background:#dad7c8;
+    border:1px solid #bfbaa2;}
+.customize-button:hover, .grand.grandma:before, .exalt-link a {
+    background:#bfbaa2;}
+.custom-box, .information-box {
+    border:1px solid #bfbaa2;
+    background:#eee;}
+    .little-title {
+    border-bottom:1px solid #bfbaa2;}
+    .fam-status {
+    border-top:1px solid #bfbaa2;}
+    .customize-button {
+    color:maroon;
+    border-top:1px solid #bfbaa2;}
+    .customize-button:nth-of-type(2) {
+    border-left:1px solid #bfbaa2;}
+    .genealogy:nth-of-type(2) {
+    border-left:1px solid #bfbaa2;}
+    .parent.mom:after, .grand.grandma:after {
+    border-bottom:3px double #bfbaa2;}
 
 #navbar.colorize, .shield.colorize, .customize-title.colorize {
-    background:#dad7c8 !important;}
+    background:#d0d0d0 !important;}
 .data.colorize {
-    background:#dad7c8 !important;
-    border:1px solid #bfbaa2 !important;}
-.customize-button.colorize:hover, 
-    .grand.grandma.colorize:before, .exalt-link.colorize a {
-    background:#bfbaa2 !important;}
+    background:#d0d0d0 !important;
+    border:1px solid #aaa !important;}
+.customize-button.colorize:hover, .grand.grandma.colorize:before, .exalt-link.colorize a {
+    background:#aaa !important;}
 .custom-box.colorize, .information-box.colorize {
-    border:1px solid #bfbaa2 !important;
+    border:1px solid #aaa !important;
     background:#eee;}
     .little-title.colorize {
-    border-bottom:1px solid #bfbaa2 !important;}
+    border-bottom:1px solid #aaa !important;}
     .fam-status.colorize {
-    border-top:1px solid #bfbaa2 !important;}
+    border-top:1px solid #aaa !important;}
     .customize-button.colorize {
-    color:maroon;
-    border-top:1px solid #bfbaa2 !important;}
+    color:maroon !important;
+    border-top:1px solid #aaa !important;}
     .customize-button.colorize:nth-of-type(2) {
-    border-left:1px solid #bfbaa2 !important;}
+    border-left:1px solid #aaa !important;}
     .genealogy.colorize:nth-of-type(2) {
-    border-left:3px double #bfbaa2 !important;}
+    border-left:1px solid #aaa !important;}
     .parent.mom.colorize:after, .grand.grandma.colorize:after {
-    border-bottom:3px double #bfbaa2 !important;}
+    border-bottom:3px double #aaa !important;}
 
 #navbar, .shield, .customize-title, .data, .customize-button:hover, 
     .grand.grandma:before, .exalt-link a, .custom-box, .information-box, .little-title, .customize-button, .customize-button:nth-of-type(2), .genealogy:nth-of-type(2), .parent.mom:after, .grand.grandma:after {
