@@ -51,7 +51,8 @@ a {
     box-shadow:3px 3px 5px rgb(0,0,0,0.3);
     font-family:verdana, sans-serif;
     background:#f3f3f3;}
-    
+
+/* Container for everything */    
 #main {
     position:relative;
     display:block;
@@ -61,7 +62,11 @@ a {
     border-left:1px solid black;
     border-right:1px solid black;
     margin-left:-476px;}
-    
+
+/* Image at the top with the user box; fun fact, the userbox 
+   is actually part of the background. The site just layers 
+   the right text over it. In order to change the userbar, you
+   need a different background image. */
 #hud {
     display:block;
     background:#000;
@@ -73,12 +78,6 @@ a {
     line-height:175%;
     color:#d0d0d0;
     background:url(https://s19.postimg.cc/iv6fhv9oj/starwoodbrook.png);
-    	/*http://flightrising.com/images/layout/arcane/banner.jpg
-
-    	// Mashups by Ecci http://www1.flightrising.com/forums/cc/2287471/1
-    	https://s19.postimg.cc/ninaid7mb/The_Training_Ruins.png
-    	https://i.imgur.com/bKE8Jkh.png  forest
-    	https://s19.postimg.cc/iv6fhv9oj/starwoodbrook.png*/
     background-attachment:fixed;
     background-position:center top;
     background-size:950px auto;
@@ -91,29 +90,6 @@ a {
     width:235px;}
     .site-header img {
     width:180px;}
-#site-updates {
-    display:block;
-    position:absolute;
-    text-align:left;
-    color:#000;
-    right:0px;
-    top:0px;
-    width:255px;
-    height:26px;
-    line-height:26px;
-    border-bottom-left-radius:10px;
-    font-size:10px;
-    padding:5px 10px;
-	background:rgb(221,215,199);
-    border-left:1px solid #000;
-    border-bottom:1px solid #000;}
-    #site-updates img {
-    float:left;
-    display:inline-block;
-    width:20px;
-    margin-top:3px;
-    margin-right:5px;}
-
 #user {
     display:block;
     position:absolute;
@@ -288,7 +264,8 @@ a {
     .want {
     float:right;
     width:60px;}
-    
+
+/* Maroon bar - time, food, and alerts/pings */    
 #status {
     padding:10px 10px 10px 15px;
     line-height:15px;
@@ -335,7 +312,8 @@ a {
     height:20px;
     margin:-2.5px 0px;
     margin-left:35px;}
-    
+
+/* Container inside the container ( ͡° ͜ʖ ͡°) */
 .container {
     position:relative;
     z-index:0;
@@ -833,9 +811,8 @@ a {
     .footer a:hover {
     color:#fff;}
 
-
-/*Fancy color stuffs*/
-
+/* Fancy color stuffs which are genuinely evil and 
+   if you know a nicer way of doing it please let me know */
 .demanding {
     position:fixed;
     padding:10px;
@@ -879,6 +856,8 @@ a {
     .parent.mom:after, .grand.grandma:after {
     border-bottom:3px double #bfbaa2;}
 
+/* That little toggle colors button is practically an evil puppetmaster */
+/* Controlling all these divs with its fancy scripts */
 #navbar.colorize, .shield.colorize, .customize-title.colorize {
     background:#d0d0d0 !important;}
 .data.colorize {
