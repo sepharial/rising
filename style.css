@@ -72,7 +72,7 @@ a {
     padding-top:2px;
     line-height:175%;
     color:#d0d0d0;
-    background:url(https://i.imgur.com/bKE8Jkh.png);
+    background:url(https://s19.postimg.cc/iv6fhv9oj/starwoodbrook.png);
     	/*http://flightrising.com/images/layout/arcane/banner.jpg
 
     	// Mashups by Ecci http://www1.flightrising.com/forums/cc/2287471/1
@@ -498,14 +498,18 @@ a {
     font-weight:bold;
     z-index:10;
     position:relative;}
+    .hungry.milk {
+    background:#fff;}
     .gotmilk {
     position:absolute;
+    display:block;
     top:0px;
-    right:0px;
+    left:0px;
     z-index:0;
     height:40px;
-    background:#fff;
-    width:4%;}
+    width:96%;
+    background:linear-gradient(to left, #3dbf26, yellow, yellow, red);
+    opacity:0.75;}
 .data-stats {
     position:relative;
     display:block;
@@ -585,7 +589,7 @@ a {
     position:relative;
     font-weight:bold;
     display:block;
-    color:#000;
+    color:#5b0e0e;
     padding:10px 0px;
     font-size:12px;
     line-height:20px;
@@ -688,6 +692,12 @@ a {
     float:right;}
     .familiar .c-buttons {
     padding-top:0px;}
+    .love .fa {
+    line-height:35px !important;}
+    .customize-button.love {
+    font-size:18px;}
+    .customize-button.love:hover {
+    background:#ffc9e5 !important;}
 
 .information-box {
     display:block;
@@ -829,7 +839,7 @@ a {
 .data {
     background:#d0d0d0;
     border:1px solid #aaa;}
-.hungry, .customize-button:hover, 
+.customize-button:hover, 
     .grand.grandma:before, .exalt-link a {
     background:#aaa;}
 .custom-box, .information-box {
@@ -857,11 +867,14 @@ a {
     font-weight:bold;
     border-radius:10px;
     cursor:pointer;
+    border:2px solid black;
     -webkit-transition: all .3s linear;
     -moz-transition: all .3s linear;
     -o-transition: all .3s linear;
     transition: all .3s linear;}
     .demanding.colorize {
+    color:maroon;
+    border:2px solid maroon;
     background:#dad7c8;}
 
 #navbar.colorize, .shield.colorize, .customize-title.colorize {
@@ -869,7 +882,7 @@ a {
 .data.colorize {
     background:#dad7c8 !important;
     border:1px solid #bfbaa2 !important;}
-.hungry.milk.colorize, .customize-button.colorize:hover, 
+.customize-button.colorize:hover, 
     .grand.grandma.colorize:before, .exalt-link.colorize a {
     background:#bfbaa2 !important;}
 .custom-box.colorize, .information-box.colorize {
@@ -889,7 +902,7 @@ a {
     .parent.mom.colorize:after, .grand.grandma.colorize:after {
     border-bottom:3px double #bfbaa2 !important;}
 
-#navbar, .shield, .customize-title, .data, .hungry.milk, .customize-button:hover, 
+#navbar, .shield, .customize-title, .data, .customize-button:hover, 
     .grand.grandma:before, .exalt-link a, .custom-box, .information-box, .little-title, .customize-button, .customize-button:nth-of-type(2), .genealogy:nth-of-type(2), .parent.mom:after, .grand.grandma:after {
     -webkit-transition: all .3s linear;
     -moz-transition: all .3s linear;
@@ -897,5 +910,7 @@ a {
     transition: all .3s linear;}
     .exalt-link a:hover {
     background:#888 !important;}
+    .customize-button.love:hover {
+    background:#ffc9e5 !important;}
 
 </style>

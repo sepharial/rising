@@ -2,6 +2,7 @@
 <head><title>FR Page Rewrite Project!</title><link rel="shortcut icon" href="https://vignette.wikia.nocookie.net/flightrising/images/1/14/Flightrising_favicon_new_transparent.png/revision/latest?cb=20170831175959">
 	<link rel="stylesheet" type="text/css" href="style.css"/>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><script type="text/javascript" src="jquery.style-my-tooltips.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
 <script>
 	$(document).ready(function(){
@@ -25,8 +26,9 @@
 
 
 	$(document).ready(function(){
+        $(".demanding, #navbar, .data, .shield, .custom-box, .exalt-link, .customize-title, .information-box, .little-title, .fam-status, .customize-button, .genealogy, .parent, .grand").addClass("colorize");
         $(".demanding").click(function(){
-            $(".demanding, #navbar, .data, .custom-box, .exalt-link, .customize-title, .information-box, .little-title, .fam-status, .customize-button, .genealogy, .hungry.milk, .parent, .grand").toggleClass("colorize");
+            $(".demanding, #navbar, .data, .shield, .custom-box, .exalt-link, .customize-title, .information-box, .little-title, .fam-status, .customize-button, .genealogy, .parent, .grand").toggleClass("colorize");
         });
     });
 
@@ -135,23 +137,23 @@
 
 <div class="container">
 	<div id="navbar">
-		<a class="nav-header"><span class="shield">Clan</span></a>
+		<a class="nav-header"><span class="shield"><i class="fa fa-home"></i> Clan</span></a>
             <a href="#">Dragon Lair</a>
             <a href="#">Nesting Grounds</a>
             <a href="#">Gather Items</a>
             <a href="#">Clan Profile</a>
             <a href="#">Hoard</a>
-        <a class="nav-header"><span class="shield">Shop</span></a>
+        <a class="nav-header"><span class="shield"><i class="fa fa-shopping-basket"></i> Shop</span></a>
             <a href="#">Marketplace</a>
             <a href="#">Auction House</a>
             <a href="#">Trading Post</a>
             <a href="#">Crossroads</a>
             <a href="#">Festive Favors</a>
-        <a class="nav-header"><span class="shield">Play</span></a>
+        <a class="nav-header"><span class="shield"><i class="fa fa-flag"></i> Play</span></a>
             <a href="#">Fairgrounds</a>
             <a href="#">Coliseum</a>
             <a href="#">Dominance</a>
-        <a class="nav-header"><span class="shield">Library</span></a>
+        <a class="nav-header"><span class="shield"><i class="fa fa-book-open"></i> Library</span></a>
             <a href="#">Forums</a>
             <a href="#">Search</a>
             <a href="#">Dressing Room</a>
@@ -159,7 +161,7 @@
             <a href="#">World Map</a>
             <a href="#">Encyclopedia</a>
             <a href="#">Which Waystone</a>
-        <a class="nav-header"><span class="shield">Ops</span></a>
+        <a class="nav-header"><span class="shield"><i class="fa fa-eye"></i> Ops</span></a>
             <a href="#">Purchase Gems</a>
             <a href="#">Custom Skins</a>
             <a href="#">Media</a>
@@ -190,8 +192,8 @@
                 <b>Imperial Male</b> <span style="font-weight:normal; float:right; margin-right:14px;">Level 25</span><br>
                 <b>Hatchday</b> <span style="font-weight:normal; float:right; margin-right:14px;">September 26, 2015 (2 years)</span></div>
             <div class="hungry milk">
-                Energy: 48/50
                 <div class="gotmilk"></div>
+                <div style="position:relative; z-index:9;">Energy: 48/50</div>
             </div>
             <div class="data-stats">
     			<table class="col">
@@ -311,7 +313,7 @@
                     <div class="bond-unit"></div>
                 </div>
             <div class="c-buttons">
-                <div class="customize-button">Bond</div>
+                <div class="customize-button love" title="Bond with your familiar!"><i class="fa fa-heart"></i></div>
                 <div class="customize-button">Change</div>
             </div>
         </div>
