@@ -3,9 +3,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     margin:0;
     padding:0;
     border:0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;}
+    font-size:100%;
+    font:inherit;
+    vertical-align:baseline;}
 
 body {
     margin:0;
@@ -882,8 +882,7 @@ a {
     .parent.mom.colorize:after, .grand.grandma.colorize:after {
     border-bottom:3px double #aaa !important;}
 
-#navbar, .shield, .customize-title, .data, .customize-button:hover, 
-    .grand.grandma:before, .exalt-link a, .custom-box, .information-box, .little-title, .customize-button, .customize-button:nth-of-type(2), .genealogy:nth-of-type(2), .parent.mom:after, .grand.grandma:after {
+#navbar, .shield, .customize-title, .data, .customize-button:hover, .grand.grandma:before, .exalt-link a, .custom-box, .information-box, .little-title, .customize-button, .customize-button:nth-of-type(2), .genealogy:nth-of-type(2), .parent.mom:after, .grand.grandma:after {
     -webkit-transition: all .3s linear;
     -moz-transition: all .3s linear;
     -o-transition: all .3s linear;
